@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Enrollment System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Student Enrollment</h1>
+
+      <section class="form-area">
+        <form id="registration-form">
+          <label>Full Name:</label>
+          <input type="text" id="full-name" required />
+
+          <label>Student ID:</label>
+          <input type="number" id="student-id" required min="1" />
+
+          <label>Email Address:</label>
+          <input type="email" id="email" required />
+
+          <label>Contact Number:</label>
+          <input type="tel" id="contact" required pattern="[0-9]{10}" />
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </section>
+
+      <section class="records-area">
+        <table id="records-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
