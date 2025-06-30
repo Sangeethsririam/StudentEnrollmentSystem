@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.reset();
   });
 
-  // Make functions globally accessible
+
   window.editStudent = function (index) {
     const student = students[index];
 
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     emailInput.value = student.email;
     contactInput.value = student.contact;
 
-    students.splice(index, 1); // Remove the old entry
+    students.splice(index, 1);
     renderTable();
   };
 
